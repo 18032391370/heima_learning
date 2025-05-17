@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>注册信息</h1>
+    <form action="">
+        <h2>个人信息</h2>
+        <div>
+            <label for="name">姓名：</label><input type="text" placeholder="请输入真实姓名" id="name">
+            <br><br>
+        </div>
+        <div>
+            <label for="pwd">密码：</label><input type="password" placeholder="请输入密码" id="pwd">
+            <br><br>
+        </div>
+        <div>
+            <label for="againPwd">确认密码：</label><input type="password" placeholder="请输入确认密码" id="againPwd">
+            <br><br>
+        </div>
+        <div>
+            <label for="">性别：</label>
+            <input type="radio" name="gender" id="male"> <label for="male">男</label>
+            <input type="radio" name="gender" id="famale" checked> <label for="famale">女</label>
+            <br><br>
+        </div>
+        <div>
+            <label for="">居住城市：</label>
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">广州</option>
+                <option value="">深圳</option>
+                <option value="">武汉</option>
+            </select>
+        </div>
+        <h2>教育经历</h2>
+        <div>
+            <label for="">最高学历：</label>
+            <select name="" id="">
+                <option value="">博士</option>
+                <option value="">硕士</option>
+                <option value="">本科</option>
+                <option value="">大专</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <label for="schoolName">学校名称：</label><input type="text" name="schoolName">
+            <br><br>
+        </div>
+        <div>
+            <label for="majorName">所学专业：</label><input type="text" name="majorName">
+            <br><br>
+        </div>
+        <div>
+            <label for="">在校时间：</label>
+            <select name="" id="">
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+            </select>
+            <span>--</span>
+            <select name="" id="">
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+            </select>
+        </div>
+        <h2>工作经历</h2>
+        <div>
+            <label for="companyName">公司名称：</label><input type="text" name="companyName">
+            <br><br>
+        </div>
+        <div>
+            <label for="jobDescription">工作描述：<br></label><textarea name="jobDescription" id=""></textarea>
+            <br><br>
+        </div>
+        <div>
+            <input type="checkbox"><span>已阅读并同意以下协议：</span>
+            <ul>
+                <li><a href="./practice01.html">《用户服务协议》</a></li>
+                <li><a href="./practice01.html">《隐私政策》</a></li>
+            </ul>
+            <br><br>
+        </div>
+        <button>免费注册</button>
+        <button type="reset">重新填写</button>
+    </form>
+</body>
+</html>
