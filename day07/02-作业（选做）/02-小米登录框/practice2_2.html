@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style lang="scss">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            .login{
+                padding: 100px 0 0 0;
+                /* background-color: blue; */
+                text-align: center;
+                .logo{
+                    background-color: #ff4c00;
+                }
+                h1{
+                    font-weight: 400;
+                    font-size: 30px;
+                    padding: 35px 0;
+                }
+                .userInput{
+                    padding: 14px 0 0 0;
+                    .inputType{
+                        width: 356px;
+                        height: 50px;
+                        border: 1px solid #e0e0e0;
+                        border-radius: 0px;
+                        margin: 0 0 14px 0;
+                        padding: 19px 14px;
+                        font-size: 14px;
+                    }
+                    button{
+                        width: 356px;
+                        height: 50px;
+                        background-color: #ff4c00;
+                        color: #FFFFFF;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <img src="./images/mi-logo.png" alt="logo" class="logo">
+        <h1>小米账号登录</h1>
+        <div class="userInput">
+            <div><input type="text" placeholder="邮箱/手机/小米ID" class="inputType"></div>
+            <div><input type="password" placeholder="邮箱/手机/小米ID" class="inputType"></div>
+            <button>登录</button>
+        </div>
+    </div>
+</body>
+</html>
