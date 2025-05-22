@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style lang="less">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            .news{
+                /* background-color: blue; */
+                width: 360px;
+                height: 190px;
+                margin: 100px auto;
+                .title{
+                    background-color: #e9e9e9;
+                    height: 34px;
+                    border: 1px solid #dbdcdf;
+                    border-left: 0;
+                    .tagName{
+                        /* 画盒子 确认位置 调文字 */
+                        width: 48px;
+                        height: 34px;
+                        background-color: #FFFFFF;
+                        border-top: 2px solid #ff8400;
+                        border-right: 1px solid #dbdcdf;
+                        margin: -1px 0 0 0;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 32px;
+                    }
+                }
+                .content{
+                    ul{
+                        padding: 5px;
+                        li{
+                            list-style: none;
+                            background-image: url(./yellow.png);
+                            background-repeat: no-repeat;
+                            background-position: left center;
+                            padding: 0 0 0 12px;
+                            line-height: 30px;
+                            a{
+                                background:url(./img.gif) no-repeat left center;
+                                padding: 0 0 0 22px;
+                                text-decoration: none;
+                                color: #666666;
+                                font-size: 12px;
+                            }
+                            a:hover{
+                                color: #ff8400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="title">
+            <h3 class="tagName">新闻</h3>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
