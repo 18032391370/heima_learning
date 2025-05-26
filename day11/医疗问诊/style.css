@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .Bars {
+  width: 100vw;
+  height: 11.73333333vw;
+  padding: 0 4vw 0 4.26666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* .Bars .icon-left {
+  font-size: 6.4vw;
+  color: #000;
+  text-decoration: none;
+}
+* .Bars .barTitle {
+  font-size: 4.53333333vw;
+  font-weight: 500;
+}
+* .Bars .records {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #2CB5A5;
+  text-decoration: none;
+}
+* .banner {
+  padding: 8.13333333vw 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* .banner .bannerImage {
+  width: 64vw;
+  height: 54.93333333vw;
+}
+* .banner .bannerTitle {
+  margin: 4.8vw 0 4.93333333vw 0;
+  font-size: 4.26666667vw;
+  font-weight: 500;
+}
+* .card {
+  margin: 0 auto 4vw;
+  width: 92vw;
+  height: 20.8vw;
+  border: 0.13333333vw solid #EDEDEDE5;
+  display: flex;
+  position: relative;
+}
+* .card .iconType {
+  width: 10.66666667vw;
+  height: 10.66666667vw;
+  margin: 5.06666667vw 3.6vw 4vw;
+}
+* .card .navTitle {
+  padding: 4vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* .card .navTitle h1 {
+  font-size: 4.26666667vw;
+  font-weight: 500;
+  color: #3C3E42;
+  line-height: 6.4vw;
+}
+* .card .navTitle p {
+  font-size: 3.46666667vw;
+  font-weight: 300;
+  color: #848484;
+  line-height: 5.33333333vw;
+}
+* .card .icon-right {
+  margin: 8.8vw 0 7.46666667vw 0;
+  font-size: 4.53333333vw;
+  color: #cdacb5;
+  position: absolute;
+  right: 2.66666667vw;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="Bars">
+        <a href="#" class="iconfont icon-left"></a>
+        <span class="barTitle">极速问诊</span>
+        <a href="#" class="records">问诊记录</a>
+    </div>
+    <!-- 介绍区域 -->
+     <div class="banner">
+        <img
+            src="./assets/entry.png"
+            alt="image"
+            class="bannerImage"
+        >
+        <p class="bannerTitle">
+            <span style="color: #16C2A3;">20s</span>
+            快速匹配专业医生
+        </p>
+     </div>
+     <!-- 跳转导航 数据驱动-->
+      <!-- <a class="card"> -->
+      <a
+        href="#"
+        id="cards"
+        style="text-decoration: none;"
+        >
+        <!-- 11111111 左中右布局-->
+         <!-- <img
+            src="./assets/type01.png"
+            alt="type01"
+            class="iconType"
+         >
+         <div class="navTitle">
+            <h1>三甲图文问诊</h1>
+            <p>三甲主治及以上级别医生</p>
+         </div>
+         <span class="iconfont icon-right"></span> -->
+      </a>
+
+    <script type="text/javascript">
+        // 创建对象存放数据
+        const cardData=[
+            {
+                img: './assets/type01.png',
+                title: '三甲图文问诊',
+                subtitle: '三甲主治及以上级别医生'
+            },{
+                img: './assets/type02.png',
+                title: '快速问医生',
+                subtitle: '立即提问，医生极速回复'
+            }
+        ];
+        // 选择卡片容器
+        // const container=document.querySelector('.card');
+        const container=document.getElementById('cards');
+        // 遍历数组
+        cardData.forEach(item =>{
+            // 创建显示卡片的容器
+            const cardItem=document.createElement('div');
+            // 设置类名
+            cardItem.className='card';
+            // 创建图片标签
+            const img=document.createElement('img');
+            // 设置类名 地址 提示文本
+            img.className='iconType';
+            img.src=item.img;
+            img.alt=item.title;
+            cardItem.appendChild(img);
+            // 文字容器
+            const navTitle=document.createElement('div');
+            navTitle.className='navTitle';
+            cardItem.appendChild(navTitle);
+            // 主标题
+            const h1=document.createElement('h1');
+            h1.textContent=item.title;
+            navTitle.appendChild(h1);
+            // 副标题
+            const p=document.createElement('p');
+            p.textContent=item.subtitle;
+            navTitle.appendChild(p);
+
+            const icon=document.createElement('span');
+            icon.className='iconfont icon-right';
+            cardItem.appendChild(icon);
+            // 把内容丢入容器 显示在页面上
+            container.appendChild(cardItem);
+        });
+    </script>
+</body>
+</html>
