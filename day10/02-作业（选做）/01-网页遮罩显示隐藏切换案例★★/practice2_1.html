@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* text-align: center; */
+        }
+        .video {
+            width: 717px;
+            height: 406px;
+            margin: 100px auto;
+            position: relative;
+            display: block;
+        }
+        .black{
+            display: none;
+            width: 710px;
+            height: 400px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            background: url(./images/arr.png) no-repeat center rgba(0, 0, 0, 0.5);
+        }
+        .video:hover .black{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="video" style="border: 3px solid #ffa500;">
+        <img
+            src="./images/sed.jpg"
+            alt="sed"
+            >
+        <div class="black"></div>
+    </div>
+</body>
+</html>

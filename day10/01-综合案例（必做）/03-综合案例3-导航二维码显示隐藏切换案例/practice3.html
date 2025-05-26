@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .nav{
+            border: 1px solid #cccccc;
+            display: flex;
+            justify-content: center;
+            
+        }
+        a{
+            width: 239px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 40px;
+            color: #000;
+            border-right: 1px solid #cccccc;
+            position: relative;
+        }
+        a:last-child{
+            border-right:0;
+        }
+        img{
+            border: 1px solid #cccccc;
+            position: absolute;
+            top: 40px;
+            left: 53px;
+            display: none;
+        }
+        a:hover img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">我要投资<img src="./images/code.jpg" alt="code"></a>
+        <a href="#">我要投资<img src="./images/code.jpg" alt="code"></a>
+        <a href="#">我要投资<img src="./images/code.jpg" alt="code"></a>
+        <a href="#">我要投资<img src="./images/code.jpg" alt="code"></a>
+        <a href="#">我要投资<img src="./images/code.jpg" alt="code"></a>
+    </div>
+</body>
+</html>
