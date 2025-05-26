@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .banner{
+            width: 564px;
+            height: 315px;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner ul{
+            width: 300%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .banner ul li{
+            width: 33.33%;
+            height: 100%;
+        }
+        .banner img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .banner ol{
+            position: absolute;
+            height: 13px;
+            bottom: 19px;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            display: flex;
+            z-index: 10;
+        }
+        .banner ol li{
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+            cursor: pointer;
+        }
+        .banner ol .active{
+            background-color: #ff5000;
+        }
+        .banner .left,
+        .banner .right{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 5px;
+            text-decoration: none;
+            /* text-align: center; */
+            color: #fff;
+            display: none;
+            transition: all 1s;
+            /* opacity: 0; */
+        }
+        .banner .left{
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+        .banner .right{
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+        .banner:hover .left,
+        .banner:hover .right{
+            display: block;
+            /* opacity: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <ul>
+            <li><a href="#"><img src="./images/banner1.jpg" alt="banner1"></a></li>
+            <li><a href="#"><img src="./images/banner1.jpg" alt="banner1"></a></li>
+            <li><a href="#"><img src="./images/banner1.jpg" alt="banner1"></a></li>
+        </ul>
+        <!-- 圆点 -->
+        <ol>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <!-- 切换 -->
+        <a href="#" class="left">
+            <span class="iconfont icon-zuoce"></span>
+        </a>
+        <a href="#" class="right">
+            <span class="iconfont icon-youce"></span>
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.banner ul');
+            const dots = document.querySelectorAll('.banner ol li');
+            const prevBtn = document.querySelector('.left');
+            const nextBtn = document.querySelector('.right');
+            let currentIndex = 0;
+            let timer;
+            //定义轮播
+            function autoSlide() {
+                currentIndex = (currentIndex + 1) % dots.length;
+                updateCarousel();
+            }
+            //改变小圆点和轮播图
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + dots.length) % dots.length;
+                updateCarousel();
+                resetTimer();
+            }
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % dots.length;
+                updateCarousel();
+                resetTimer();
+            }
+            //点击函数
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                    resetTimer();
+                });
+            });
+            function resetTimer() {
+                clearInterval(timer);
+                timer = setInterval(autoSlide, 1000);
+            }
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                prevSlide();
+            });
+            
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                nextSlide();
+            });
+            //鼠标切换
+            document.querySelector('.banner').addEventListener('mouseenter', () => {
+                clearInterval(timer);
+            });
+            //鼠标切换
+            document.querySelector('.banner').addEventListener('mouseleave', () => {
+                resetTimer();
+            });
+            // 重置定时器
+            resetTimer();
+        });
+    </script>
+</body>
+</html>
