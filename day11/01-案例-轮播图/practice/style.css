@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .banner {
+  margin: 100px auto;
+  width: 564px;
+  position: relative;
+}
+* .banner li {
+  list-style: none;
+}
+* .banner li a img {
+  width: 564px;
+  height: 315px;
+  border-radius: 10px;
+}
+* .banner .Dots {
+  border-radius: 10px;
+  position: absolute;
+  height: 13px;
+  bottom: 19px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  background-color: #ffffff58;
+}
+* .banner .Dots .Dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 3px;
+  cursor: pointer;
+}
+* .banner .Dots .active {
+  background-color: #dc4d00;
+}
+* .banner .left,
+* .banner .right {
+  background-color: #00000060;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0;
+  transition: all 1s;
+}
+* .banner .left {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+* .banner .right {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+* .banner:hover .left,
+* .banner:hover .right {
+  opacity: 1;
+}
