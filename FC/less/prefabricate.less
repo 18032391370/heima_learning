@@ -1,0 +1,31 @@
+@vwSize:3.75vw;
+// 与预制菜一样，本页面已经清除默认样式、标准盒设置、标题栏样式，尽情使用
+// 为了避免在less文件夹反复生成无用的css文件，最好不要重复保存本页面
+// 引入方式：import "prefabricate.less";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F0F0;
+    // 注意全局最大的父容器已开启相对定位
+    position: relative;
+}
+.top{
+    height: (45/@vwSize);
+    background-color: #000;
+    padding: 0 (14/@vwSize);
+    font-size: (16/@vwSize);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: (45/@vwSize);
+    .topLeft{
+        font-size: (16/@vwSize);
+    }
+    h1{
+        font-size: (18/@vwSize);
+        font-weight: 400;
+    }
+}

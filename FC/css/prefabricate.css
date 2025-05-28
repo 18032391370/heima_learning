@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F0F0F0;
+  position: relative;
+}
+.top {
+  height: 12vw;
+  background-color: #000;
+  padding: 0 3.73333333vw;
+  font-size: 4.26666667vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  line-height: 12vw;
+}
+.top .topLeft {
+  font-size: 4.26666667vw;
+}
+.top h1 {
+  font-size: 4.8vw;
+  font-weight: 400;
+}

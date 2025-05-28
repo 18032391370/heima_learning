@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F0F0F0;
+  position: relative;
+}
+.top {
+  height: 12vw;
+  background-color: #000;
+  padding: 0 3.73333333vw;
+  font-size: 4.26666667vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  line-height: 12vw;
+}
+.top .topLeft {
+  font-size: 4.26666667vw;
+}
+.top h1 {
+  font-size: 4.8vw;
+  font-weight: 400;
+}
+.authority {
+  position: fixed;
+  width: 39.73333333vw;
+  height: 15.46666667vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16.26666667vw;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.authority .tips {
+  font-size: 3.73333333vw;
+}
+.banner {
+  position: relative;
+  height: 42.66666667vw;
+}
+.banner img {
+  height: 42.66666667vw;
+}
+.banner .dots {
+  width: 21.33333333vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.13333333vw;
+}
+.banner .dots span {
+  width: 2.13333333vw;
+  height: 2.13333333vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin: 0 1.33333333vw 0 0;
+}
+.banner .dots .active {
+  background-color: #fff;
+}
+.title {
+  font-size: 3.73333333vw;
+  margin: 2.66666667vw 0 4vw 4vw;
+}
+.content {
+  width: 100vw;
+  height: 66.66666667vw;
+  background-color: #fff;
+  position: relative;
+  margin: 0 0 2.66666667vw 0;
+}
+.content .gray {
+  width: 100vw;
+  height: 42.66666667vw;
+  background-color: #d8d8d8;
+}
+.content .gray span {
+  font-size: 7.46666667vw;
+  font-weight: 700;
+  color: #EBEBEB;
+  padding: 16vw 0 0 32.8vw;
+  line-height: 42.66666667vw;
+}
+.content .markImage {
+  width: 18.13333333vw;
+  height: 7.73333333vw;
+  position: absolute;
+  top: -1.06666667vw;
+  left: 4vw;
+}
+.content .markText {
+  position: absolute;
+  top: -0.26666667vw;
+  left: 7.73333333vw;
+  font-size: 3.2vw;
+  color: #FFFFFF;
+  z-index: 9999;
+}
+.content .icon-shoucang,
+.content .icon-shoucang1 {
+  font-size: 6.4vw;
+  position: absolute;
+  right: 4.8vw;
+  top: 4.8vw;
+  color: #fff;
+}
+.content .icon-shoucang {
+  color: #b08d34;
+}
+.content .shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 66.66666667vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.content .titleMain {
+  height: 11.46666667vw;
+  display: flex;
+  align-content: center;
+  margin: 2.13333333vw 0 4vw 4vw;
+}
+.content .titleMain h3 {
+  width: 76vw;
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 5.6vw;
+  letter-spacing: 0.056vw;
+  margin: 0 8.13333333vw 0 0;
+}
+.content .titleMain span {
+  font-size: 4vw;
+  line-height: 5.6vw;
+  color: #FE6249;
+}
+.content .information {
+  margin: 0 0 2.93333333vw 4vw;
+  font-size: 2.93333333vw;
+  color: #B4B4B4;
+}
+.content .information .icon-qizhi,
+.content .information .icon-shizhong {
+  margin: 0 1.6vw 0 0;
+  font-size: 2.66666667vw;
+}
+.content .information .icon-shizhong {
+  margin: 0 0 0 4vw;
+}
+.bottomBar {
+  width: 100vw;
+  height: 13.06666667vw;
+  background-color: #feca49;
+  margin: 1.33333333vw 0 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.bottomBar .contentBar {
+  width: 70.13333333vw;
+  height: 10.4vw;
+  margin: 1.6vw 14.93333333vw 1.06666667vw;
+  display: flex;
+  justify-content: space-between;
+}
+.bottomBar .contentBar .tags .icon-index-copy,
+.bottomBar .contentBar .tags .icon-youhuiquan,
+.bottomBar .contentBar .tags .icon-iconfront- {
+  font-size: 6.66666667vw;
+}
+.bottomBar .contentBar .tags .icon-index-copy {
+  color: #fff;
+}
+.bottomBar .contentBar .tags .iconText,
+.bottomBar .contentBar .tags .iconTextActive {
+  font-size: 2.93333333vw;
+  line-height: 2.93333333vw;
+}
+.bottomBar .contentBar .tags .iconTextActive {
+  color: #fff;
+}
+.bottomBar .contentBar .tags .icon-youhuiquan,
+.bottomBar .contentBar .tags .icon-iconfront-,
+.bottomBar .contentBar .tags .iconText {
+  color: #D78B09;
+}
