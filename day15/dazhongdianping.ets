@@ -1,0 +1,52 @@
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Column(){
+        Image($r('app.media.product'))
+          .width('100%')
+        Column({space:5}){
+          Text('大家看一下要不要50元门票走一趟')
+            .width('100%')
+            .fontSize(15)
+            .fontWeight(500)
+            .lineHeight(22)
+          Row(){
+            Image($r('app.media.avatar'))
+              .width(20)
+              .borderRadius(10)
+            Text('Nina_8888')
+              .margin({left:5})
+              .fontSize(14)
+              .fontColor('#666')
+              .layoutWeight(1)
+            Image($r('app.media.ic_like'))
+              .width(14)
+              .fillColor('#999')
+            Text('8888')
+              .fontSize(14)
+              .fontColor('#999')
+              .margin({left:5})
+          }
+          .width('100%')
+        }
+        .padding({
+          top:5,
+          right:5,
+          bottom:10,
+          left:5
+        })
+      }
+      .width(200)
+      // .height(200)
+      .backgroundColor('#fff')
+      .borderRadius(10)
+      .clip(true)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor('#f6f7f9')
+    .padding({top:20})
+  }
+}

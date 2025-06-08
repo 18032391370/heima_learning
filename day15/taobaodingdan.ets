@@ -1,0 +1,79 @@
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Row(){
+        Image($r('app.media.top1'))
+          .width(80)
+          .borderRadius(10)
+        Row(){
+          // 左边文字
+          Column({space:8}){
+            Text('程序员2024春季新款百搭最高版本格子衫最高版本格子衫最高版本格子衫最高版本格子衫')
+              .width('70%')
+              .fontSize(14)
+              .fontWeight(700)
+              .layoutWeight(1)
+              .maxLines(1)
+              .textOverflow({overflow:TextOverflow.Ellipsis})
+            Text('条纹/XXXXX')
+              .fontSize(14)
+              .fontColor('#999')
+            Row({space:5}){
+              Text('假一赔四')
+                .fontSize(14)
+                .fontColor('#ec8741')
+                .fontWeight(500)
+                .padding(2)
+                .border({
+                  width:2,
+                  color:'#ec8741',
+                  radius:5
+                })
+              Text('七天无理由退换')
+                .fontSize(14)
+                .fontColor('#ec8741')
+                .fontWeight(500)
+                .padding(2)
+                .border({
+                  width:2,
+                  color:'#ec8741',
+                  radius:5
+                })
+            }
+          }
+          // .width(180)
+          .alignItems(HorizontalAlign.Start)
+        // 右边文字
+          Column({space:10}){
+            Text('￥ 359')
+              .fontWeight(700)
+            Row(){
+              Image($r('app.media.ic_x'))
+                .width(12)
+                .fillColor('#999')
+              Text('1')
+                .width(12)
+                .fontColor('#999')
+                .fontWeight(600)
+            }
+          }
+          .alignItems(HorizontalAlign.End)
+        }
+        .width('75%')
+        .margin(5)
+        .justifyContent(FlexAlign.SpaceBetween)
+        .alignItems(VerticalAlign.Top)
+      }
+      .width('100%')
+      .height(100)
+      .backgroundColor('#fff')
+      .margin(20)
+      .padding(10)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor('#f6f7f9')
+  }
+}
