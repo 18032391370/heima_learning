@@ -1,0 +1,215 @@
+/**
+* ${PROJECT_NAME} #项目的名称
+* ${FILE_NAME} #文件名称
+* Created by ${USER} ON ${DATE} #作者及添加日期
+*/
+@Entry
+@Component
+struct Index{
+  build(){
+    Column(){
+      Flex({
+        wrap:FlexWrap.Wrap,
+        justifyContent:FlexAlign.SpaceBetween,
+      }){
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+                // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+              // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+              // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+              // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+              // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+        Column({space:6}){
+          Stack(){
+            Image($r('app.media.music2'))
+              .width(110)
+            Row({space:3}){
+              Image($r('app.media.ic_headphones'))
+                .width(12)
+                .fillColor('#fff')
+              Text('614.2亿')
+                .fontSize(10)
+                .fontColor('#fff')
+              // .backgroundColor("#999")
+            }
+            .margin({
+              top:5,
+              right:5
+            })
+            // .backgroundColor("#0082FC")
+            .justifyContent(FlexAlign.Center)
+          }
+          .alignContent(Alignment.TopEnd)
+          Text('今天从《红山果》听起私人雷达')
+            .fontSize(12)
+            .lineHeight(16)
+            .fontColor('#666')
+            .fontWeight(600)
+            .margin({left:3})
+        }
+        .width(110)
+        .margin({
+          bottom:10
+        })
+      }
+      .padding(5)
+      .width('100%')
+    }
+    .width("100%")
+    .height("100%")
+    .backgroundColor("#F0F1F4")
+  }
+}

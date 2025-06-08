@@ -1,0 +1,99 @@
+/**
+* ${PROJECT_NAME} #项目的名称
+* ${FILE_NAME} #文件名称
+* Created by ${USER} ON ${DATE} #作者及添加日期
+*/
+@Entry
+@Component
+struct Index{
+  build(){
+    Column(){
+      Column(){
+        Text('90天')
+          .width('100%')
+          .fontSize(16)
+          .fontWeight(800)
+        Text('三大权益')
+          .width('100%')
+          .fontSize(12)
+          .fontWeight(500)
+          .margin({
+            top:15,
+            bottom:5
+          })
+          .fontColor('#666')
+        Text('再得爆款权益')
+          .width('100%')
+          .fontSize(12)
+          .fontWeight(500)
+          .fontColor('#666')
+        Row(){
+          Text('￥')
+            .fontSize(12)
+            .fontColor('#e4002e')
+            .fontWeight(800)
+            // .backgroundColor("#555")
+          Text('38')
+            .fontSize(26)
+            .fontColor('#e4002e')
+            .fontWeight(800)
+            // .backgroundColor("#999")
+            .lineHeight(26)
+        }
+        .width('100%')
+        .margin({
+          top:30,
+          bottom:15
+        })
+        .alignItems(VerticalAlign.Top)
+      }
+      .width(120)
+      .height(160)
+      // .backgroundColor('#999')
+      .border({
+        width:2,
+        color:'#C2405E',
+        radius:{
+          topLeft:10,
+          topRight:80,
+          bottomLeft:10,
+          bottomRight:10
+
+        }
+      })
+      .margin(20)
+      .padding({
+        top:20,
+        left:10
+      })
+    //   下面开始写定位
+      Row(){
+        Text('低至')
+          .fontColor('#fff')
+        Text('13')
+          .fontColor('#fff')
+        Text('元/月')
+          .fontColor('#fff')
+      }
+      .borderRadius({
+        topLeft:20,
+        topRight:20,
+        bottomRight:20,
+      })
+      .backgroundColor('#EB002B')
+      .padding({
+        top:5,
+        right:10,
+        bottom:5,
+        left:10
+      })
+      .position({
+        x:150,
+        y:3
+      })
+    }
+    .width("100%")
+    .height("100%")
+    .backgroundColor("#F6F7F9")
+  }
+}

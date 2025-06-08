@@ -1,0 +1,55 @@
+/**
+* ${PROJECT_NAME} #项目的名称
+* ${FILE_NAME} #文件名称
+* Created by ${USER} ON ${DATE} #作者及添加日期
+*/
+@Entry
+@Component
+struct Index{
+  build(){
+    Column(){
+      Column(){
+        Text('分享给朋友')
+          .margin({top:50,bottom:20})
+          .fontSize(20)
+          .fontWeight(700)
+          .fontColor('#303030')
+        Row({space:15}){
+          Image($r('app.media.weixin'))
+            .width(46)
+            .padding(8)
+            .borderRadius(23)
+            .backgroundColor('#f1f1f1')
+            .fillColor('#333')
+          Image($r('app.media.QQ'))
+            .width(46)
+            .padding(8)
+            .borderRadius(23)
+            .backgroundColor('#f1f1f1')
+            .fillColor('#333')
+          Image($r('app.media.xinlangweibo'))
+            .width(46)
+            .padding(8)
+            .borderRadius(23)
+            .backgroundColor('#f1f1f1')
+            .fillColor('#333')
+        }
+        .margin({bottom:40})
+        Image($r('app.media.qrCode'))
+          .width(180)
+          .fillColor('#333')
+        Text('关注公众号，回复“订阅期刊”')
+          .fontSize(14)
+          .fontWeight(500)
+          .fontColor('#333')
+          .margin({top:20})
+      }
+      .width('100%')
+      .height(600)
+      .backgroundColor('#fff')
+    }
+    .width("100%")
+    .height("100%")
+    .backgroundColor("#F0F1F4")
+  }
+}
