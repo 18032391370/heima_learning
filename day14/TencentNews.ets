@@ -1,0 +1,67 @@
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Column(){
+        Text('华为新工艺可造5nm芯片，耶伦访华，给她准备了大惊喜？')
+          .width('100%')
+          .fontSize(18)
+          .lineHeight(28)
+          .fontColor('#444')
+        Row(){
+          Image($r('app.media.hw0'))
+            .width(102)
+            .margin({
+              left:3,
+              right:6
+            })
+          Image($r('app.media.hw1'))
+            .width(102)
+            .margin({
+              right:6
+            })
+          Image($r('app.media.hw2'))
+            .width(102)
+        }
+        .margin({
+          top:5,
+          bottom:10
+        })
+        Row(){
+          Text('大图鉴')
+            .fontColor('#999')
+            .margin({
+              right:5
+            })
+          Text('83评')
+            .fontColor('#999')
+            .margin({
+              right:5
+            })
+          Text('6小时前')
+            .fontColor('#999')
+
+        }
+        .width('100%')
+      }
+      .width('100%')
+      // .backgroundColor('#000')
+      .padding({
+        top:10,
+        bottom:10
+      })
+      .border({
+        width:{
+          top:1,
+          bottom:1
+        },
+        color:'#f1f1f1',
+      })
+    }
+    .padding({
+      left:10,
+      right:10
+    })
+  }
+}

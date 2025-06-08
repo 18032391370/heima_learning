@@ -1,0 +1,40 @@
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Row(){
+        Image($r('app.media.close'))
+          .width(12)
+        Image($r('app.media.jd_logo'))
+          .width(35)
+          .margin({
+            left:10,
+            right:20
+          })
+        Text('打开京东app,实惠又轻松')
+          .fontSize(14)
+          .fontColor('#fff')
+        Row(){
+          Text('立即打卡')
+            .fontColor('#fff')
+            .fontSize(14)
+            .width(88)
+            .textAlign(TextAlign.Center)
+        }
+        .width(88)
+        .height(50)
+        .backgroundColor('#f63514')
+        .margin({
+          left:31
+        })
+      }
+      .width('100%')
+      .height(50)
+      .backgroundColor('#333333')
+      .padding({
+        left:10
+      })
+    }
+  }
+}

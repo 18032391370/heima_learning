@@ -1,0 +1,69 @@
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Column(){
+        Image($r('app.media.hw_line'))
+          .width('100%')
+        Text('华为原装6A数据线 USB Type-A转USB Type-C/1m线长/支持66W（11V6A）充电 白色CC790')
+          .fontSize(14)
+          .lineHeight(20)
+          .margin({
+            top:8,
+            bottom:8
+          })
+          .maxLines(2)
+          .textOverflow(
+            {overflow:TextOverflow.Ellipsis}
+          )
+        Row(){
+          Image($r('app.media.jd'))
+            .width(12)
+          Text('7天最低价')
+            .fontSize(12)
+            .fontColor('#e3598f')
+            .fontWeight(600)
+        }
+        .width('100%')
+        Row(){
+          Text('￥29.90')
+            .margin({
+              top:10,
+              bottom:10
+            })
+            .fontSize(18)
+            .fontColor('#f0666d')
+            .fontWeight(500)
+        }
+        .width('100%')
+        Row(){
+          Text('自营')
+            .fontSize(13)
+            .fontColor('#fff')
+            .backgroundColor('#ff6564')
+            .border({
+              width:1,
+              radius:4,
+              color:'#f86564'
+            })
+            .padding(2)
+            .margin({
+              bottom:5
+            })
+        }
+        .width('100%')
+      }
+      .width(160)
+      .backgroundColor('#fff')
+      .borderRadius(8)
+      .padding(5)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor('#eaeaea')
+    .padding({
+      top:10
+    })
+  }
+}
