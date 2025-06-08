@@ -1,0 +1,713 @@
+/**
+* ${PROJECT_NAME} #项目的名称
+* ${FILE_NAME} #文件名称
+* Created by ${USER} ON ${DATE} #作者及添加日期
+*/
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      // 标题开始
+      Column(){
+        // 这是上半部分
+        Row(){
+          Row({space:6}){
+            Image($r('app.media.logo'))
+              .width(33)
+              .backgroundColor('#fff')
+            Column(){
+              Text('QQ音乐')
+                .fontSize(16)
+                .lineHeight(24)
+              Text('打开A8P收惑下载')
+                .fontSize(12)
+                .lineHeight(18)
+                .fontColor('#888888')
+            }
+            .alignItems(HorizontalAlign.Start)
+          }
+          .layoutWeight(1)
+          Text('下载APP')
+            .height(25)
+            .fontSize(13)
+            .fontWeight(500)
+            .border({
+              width:1,
+              color:'#d8d8d8',
+              radius:12
+            })
+            .padding({
+              left:15,
+              right:15
+            })
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(54)
+        .padding({
+          right:14,
+          left:16
+        })
+        // 标签栏
+        Row(){
+          Text('推荐')
+            .fontColor('rgba(26,26,26,0.5)')
+            .width('50%')
+          Column(){
+            Text('排行')
+              .fontColor('rgb(34,213,156)')
+              .layoutWeight(1)
+            // 右侧按钮区域
+            Row()
+              .width(20)
+              .height(3)
+              .backgroundColor('#26CF8C')
+              .borderRadius(1.5)
+          }
+        }
+        .height(42)
+      }
+      .height(96)
+      .shadow({
+        radius:10,
+        color:'#d8d8d8',
+        offsetX:0,
+        offsetY:1,
+      })
+      // 内容开始
+      Stack(){
+        // 滚动容器
+        Scroll(){
+          Column(){
+            // 带背景色的容器 每个容器12间距
+            Column({space:12}){
+              // 卡片开始
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                      // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                    // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+            //   剩下的复制第一个
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                        // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                      // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                        // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                      // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                        // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                      // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                        // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                      // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+
+              Row(){
+                // 左侧热歌榜
+                Column({space:4}){
+                  Text('热歌榜')
+                    .fontWeight(700)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                  Text(){
+                    Span('1.')
+                      .fontWeight(700)
+                    Span('离别开出花(弹唱版)-')
+                      .fontColor('rgb(26,26,26)')
+                    Span('就是南方凯')
+                      .fontColor('rgba(26,26,26,0.5)')
+                  }
+                  .fontSize(12)
+                }
+                .alignItems(HorizontalAlign.Start)
+                .padding({
+                  top:18,
+                  right:12,
+                  bottom:18,
+                  left:12
+                })
+                .layoutWeight(1)
+                // 右侧图片区
+                Stack({alignContent:Alignment.TopEnd}){
+                  Image($r('app.media.list_01'))
+                    .width(107)
+                  // Text("测试测试测试测试测试测试")
+                  //   .fontColor(Color.Orange)
+                  Row(){
+                    Text('每日更新')
+                      .fontSize(12)
+                      .fontColor(Color.White)
+                        // .backgroundColor(Color.Red)
+                      .margin(5)
+                  }
+                  // .height(50)
+                  Text()
+                    .height(107)
+                    .width(107)
+                      // .backgroundColor(Color.Blue)
+                    .linearGradient({
+                      colors:[['rgba(0,0,0,0.0)',0],['rgba(255,255,255,0)',100]]
+                    })
+                    .zIndex(0)
+                    .stateStyles({
+                      pressed:{
+                        .linearGradient({
+                          angle:0,
+                          colors:[['rgba(255,255,255,1)',0],['rgba(255,255,255,0.5)',0.5],['rgba(255,255,255,0.1)',0.9]]
+                        })
+                        .zIndex(1)
+                      }
+                    })
+                }
+                // 图片上的定位
+                Row(){
+                  Image($r('app.media.ic_play'))
+                    .width(12)
+                    .fillColor('#fff')
+                  Text('1000万')
+                    .fontSize(12)
+                    .fontColor('#fff')
+                }
+                .height(17)
+                .backgroundColor('#878787')
+                .borderRadius(8.5)
+                .padding({
+                  left:10,
+                  right:10
+                })
+                .position({
+                  x:250,
+                  y:92
+                })
+              }
+              .backgroundColor('#fff')
+              .borderRadius(10)
+              .clip(true)
+            }
+            .margin({
+              top:20,
+              right:16,
+              left:16
+            })
+            .backgroundColor('#EFEFEF')
+          }
+        }
+        .layoutWeight(1)
+        .scrollable(ScrollDirection.Vertical)
+        .scrollBar(BarState.Off)
+        // 固定定位
+        Row({space:10}){
+          Image($r('app.media.logo'))
+            .width(22)
+          Text('安装QQ音乐发现更多精彩')
+            .fontSize(10)
+        }
+        .padding(15)
+        .backgroundColor('#fff')
+        .borderRadius(22)
+        .margin({
+          bottom:65
+        })
+        .position({
+          x:'50%',
+          y:'100%'
+        })
+        .translate({
+          x:'-50%',
+          y:'-65'
+        })
+      }
+      .layoutWeight(1)
+    }
+    .width('100%')
+    .height("100%")
+    .backgroundColor("#fafafa")
+  }
+}
